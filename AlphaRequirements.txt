@@ -1,0 +1,63 @@
+User Story
+
+User profile: A web designer heavily skilled with HTML and CSS, but in a production environment with a need for quick, accurate results. This person needs "think it, do it" tools.
+
+Story A:
+
+Designer is assigned the job of creating a new section under an existing website. A site-wide masthead and left nav already exist and will be used, but all other parts of the design are left up to the designer and project stakeholders.
+
+The designer's first task is to create wireframes for the stakeholders to review. She already has some requirements from the stakeholders so she sits down with Roark to compose a layout that she thinks meets the requirements.
+
+When she opens Roark she seens the blank design board. Since there will already be an established masthead and left nav she quickly draws them and places them on the design board. She doesn't go for detail, she just blocks them out in the design with divs. She renames the divs with names like "masthead" and "leftnav". Those aren't the important ones.
+
+For her new section she has to create a product brochure. This will include pages for a product spotlight, detailed information, and possibly a picture gallery. She has components for the picture gallery. She just needs to lay out the general page design, which includes a section-specific submenu.
+
+She draws a div where the menu will appear and renames that div "submenu". Then she draws a div to block out where the content will go. This is a general block, since each page will be specific. For right now she just wants the wireframe.
+
+She saves the design to HTML and then selects Preview. Her system default brower pops open to display her layout. By default Roark outlines each div with dashes, so the layout is clear to her. Satified she prints out the layout (or exports to PDF, whatever, beyond our scope) and sends it off to her stakeholders for review.
+
+
+Story B:
+
+The designer receives feedback from the stakeholders. They want the submenu in a new spot, and they think they might need a second menu. The designer fires up Roark and uses it to open the HTML with the layout she just created. This file is regular HTML, but it is special and Roark knows how to pay attention to its own details while ignoring others. Roark displays the divs just as the designer had left them earlier. She moves the submenu to the location where the stakeholders indicated it should be and then creates a div for where the extra menu will be. Confident that she's got the right layout she prints it and sends if off to the stakeholders, but continues on with the work this time.
+
+Using Roark, she checks the names of her divs to make sure they are what she wants. She also removes the masthead and left nav divs since she won't be creating those. The designer likes to use Blueprint CSS, so she switches Roark's mode from regular HTML to Blueprint. The divs she drew out align to the Blueprint grid. She checks that everything is lined up like she wants and then she saves the layout to HTML. She opens the generated HTML in an editor and inserts code (server side includes, link to CSS) that will let her see what this looks like in production. She pushes the file over to her development server and evaluates the look.
+
+Satisfied, she reopens the file she modified with Roark. Since Roark only pays attention to the data it knows about, Roark just shows the design she had done earlier. Satisfied that the layout will work, she checks a box that lets her save without any Roark-centric metadata. This is a "production save". All extra metadata is excluded from the save, however all of her changes (added HTML and CSS includes) are left as she had them. She views the file now and can't see the layout anymore, but she knows it is there. This is her new section template.
+
+
+Story C:
+
+Months go by. The designer gets an email from a stakeholder one day saying they'd like to take the section in a new direction. The want the site to have the same layout as the Acme Macaroni site. The stakeholder sends a link. The designer follows the link, gets the idea, and opens Roark.
+
+The designer goes back and opens a dev version (pre-production) of the layout HTML she'd worked with before. This time is a little different. She goes to the menu in Roark and chooses Browse Behind. She enters the URL and the website she was just looking at appears translucently behind the existing layout. 
+
+The designer's job this particular time is easy: Copy the layout. So she rearranges the divs to match the other sites layout. When everything matches perfectly she saves and turns off the Browse Behind. She then saves off the file as "production" and pushes her change out to the review server for the stakeholders to look over.
+
+
+
+Now, from these stories, what features can we offer the designer in our alpha release?
+
+
+Features to implement at some point:
+
+Should be able to select a group of divs and move them at once.
+
+Preview - Not just in the default browser but in a list of configurable browsers (So they could enter Firefox, Safari, IE, Opera, etc.)
+
+
+Put a generator tag in the metadata output.
+
+Allow round-trip editing. But only render the divs, and only do layout. You should test this on a few pages off the net first.
+
+
+
+Alright, this thing should definitely be able to open up a file that it created and reproduce the layout. The alpha version should have that.
+
+For the most part, this means that the style info needs to be parsed out of the header.
+
+And really, there needs to be some kind of 
+
+
+
+
