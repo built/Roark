@@ -4,7 +4,9 @@ Roark is a CSS layout editor for Windows. This code is more of a sketch or explo
 
 You can read about the full concept in concept.txt. There's also a brief demo video here: http://vimeo.com/1486536
 
-<iframe src="http://player.vimeo.com/video/1486536?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><p><a href="http://vimeo.com/1486536">Roark proof of concept</a> from <a href="http://vimeo.com/user661160">Matt Youell</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
+<iframe src="http://player.vimeo.com/video/1486536?title=0&amp;byline=0&amp;portrait=0" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
 
 I created this in the spring or summer of 2008 while doing some web work with Blueprint CSS. I was tired of trying to describe the layout I wanted in clumsy text and I thought a GUI approach to design would be nice. I was right, it *was* nice! Unfortunately getting the client's project done became more important than creating little tools like this so I never got it finished. I did get to eat though, so that is something. :)
 
